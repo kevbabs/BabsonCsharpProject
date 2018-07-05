@@ -1,0 +1,6 @@
+C:\Users\kevba\Documents\KevPrivateREPO\KBabs\KBtest\bin\Debug\KBtest.exe.config
+C:\Users\kevba\Documents\KevPrivateREPO\KBabs\KBtest\bin\Debug\KBtest.exe
+C:\Users\kevba\Documents\KevPrivateREPO\KBabs\KBtest\bin\Debug\KBtest.pdb
+C:\Users\kevba\Documents\KevPrivateREPO\KBabs\KBtest\obj\Debug\KBtest.csprojResolveAssemblyReference.cache
+C:\Users\kevba\Documents\KevPrivateREPO\KBabs\KBtest\obj\Debug\KBtest.exe
+C:\Users\kevba\Documents\KevPrivateREPO\KBabs\KBtest\obj\Debug\KBtest.pdb
