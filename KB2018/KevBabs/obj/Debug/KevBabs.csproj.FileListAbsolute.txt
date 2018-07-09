@@ -1,6 +1,0 @@
-C:\Users\kevba\Documents\KevPrivateREPO\KB2018\KevBabs\bin\Debug\KevBabs.exe.config
-C:\Users\kevba\Documents\KevPrivateREPO\KB2018\KevBabs\bin\Debug\KevBabs.exe
-C:\Users\kevba\Documents\KevPrivateREPO\KB2018\KevBabs\bin\Debug\KevBabs.pdb
-C:\Users\kevba\Documents\KevPrivateREPO\KB2018\KevBabs\obj\Debug\KevBabs.csprojResolveAssemblyReference.cache
-C:\Users\kevba\Documents\KevPrivateREPO\KB2018\KevBabs\obj\Debug\KevBabs.exe
-C:\Users\kevba\Documents\KevPrivateREPO\KB2018\KevBabs\obj\Debug\KevBabs.pdb
