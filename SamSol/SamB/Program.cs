@@ -6,11 +6,37 @@ using System.Threading.Tasks;
 
 namespace SamB
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("this is a new solution");
-        }
-    }
+            Subtract subtractPositive = new Subtract();
+            subtractPositive.subNumberone = 10;
+            subtractPositive.subNumbertwo = 6;
+            subtractPositive.subtractNumber();
+            Console.WriteLine();
+
+            Subtract subtractNegative = new Subtract();
+            subtractNegative.subNumberone = 12;
+            subtractNegative.subNumbertwo = 15;
+            subtractNegative.subtractNumber();
+            Console.WriteLine();
+      
+            //calling addition method
+            Additional addUpnumber = new Additional();
+            addUpnumber.addNumberone = 120;
+            addUpnumber.addNumbertwo = 56;
+            addUpnumber.addingNumber();
+            Console.WriteLine();
+
+            //calling smartAdd method
+            Additional addCal = new Additional();
+            addCal.SmartAdd(45, 9);
+
+
+        Console.ReadKey();
+
+          }
+
+}
 }
