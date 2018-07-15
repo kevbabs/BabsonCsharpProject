@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace courseWork2
+namespace classCourseWork
 {
     public class Subtract
     {
@@ -18,6 +18,7 @@ namespace courseWork2
         {
             subAnwser = subNumOne - subNumTwo;
             Console.WriteLine("The answer to the subtraction is [0]", subAnwser);
+
         }
     }
 }

@@ -10,7 +10,7 @@ namespace courseWork2
     {
         static void Main(string[] args)//this the main method
         {
-            Subtract subtractPositive new Subtract();
+            Subtract subtractPositive = new Subtract();
             subtractPositive.subNumOne = 10;
             subtractPositive.subNumTwo = 6;
             subtractPositive.subtractNumber();
