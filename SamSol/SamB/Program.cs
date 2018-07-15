@@ -15,7 +15,10 @@ namespace SamB
             subtractPositive.subNumbertwo = 6;
             subtractPositive.subtractNumber();
             Console.WriteLine();
+<<<<<<< HEAD
             Console.WriteLine();
+=======
+>>>>>>> ac77df22e9b0747e4cb5cef12899f6d866e511ea
 
             Subtract subtractNegative = new Subtract();
             subtractNegative.subNumberone = 12;
