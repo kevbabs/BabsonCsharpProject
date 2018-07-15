@@ -13,7 +13,7 @@ namespace SamB
         public int addNumberone;
         public int addNumbertwo;
         public int addAnswer;
-        
+       
 
         public int addingNumber()
         {
