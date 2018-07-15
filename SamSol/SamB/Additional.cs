@@ -25,9 +25,10 @@ namespace SamB
 
         public void SmartAdd(int argumentOne, int argumentTwo)
         {
-            argumentOne = addNumberone;
-            argumentTwo = addNumbertwo;
-            addAnswer = argumentOne + argumentTwo; 
+
+            addNumberone = argumentOne;
+            addNumbertwo = argumentTwo;
+            addAnswer = (argumentOne + argumentTwo) * 2; 
             Console.WriteLine("The sum of these two numbers is {0} is doube", +addAnswer);
         }
 

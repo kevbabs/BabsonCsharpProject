@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SamB
 {
-    public class Program
+    public class callMethod
     {
         static void Main(string[] args)
         {
