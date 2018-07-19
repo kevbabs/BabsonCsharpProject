@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,14 @@ namespace SamB
             //calling smartAdd method
             Additional addCal = new Additional();
             addCal.SmartAdd(24, 9);
+            Console.WriteLine();
+
+            //Calling division method 
+            Division division = new Division();
+           // division.divNumberOne = 5;
+           // division.divNumberTwo = 25;
+            division.DivisionNum(5, 25);
+            
 
 
         Console.ReadKey();

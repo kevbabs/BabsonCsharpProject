@@ -17,7 +17,7 @@ namespace SamB
         public int addingNumber()
         {
             addAnswer = addNumberone + addNumbertwo;
-            Console.WriteLine("The sum of these two numbers is {0}", + addAnswer);
+            Console.WriteLine("The sum of these two numbers is {0}", addAnswer);
             return addAnswer;
 
         }
@@ -30,7 +30,7 @@ namespace SamB
             
  
 
-            Console.WriteLine("The sum of these two numbers is {0} is doube", +addAnswer);
+            Console.WriteLine("The sum of these two numbers is {0} is doube", addAnswer);
         }
 
     }

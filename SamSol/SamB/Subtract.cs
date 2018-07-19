@@ -17,7 +17,7 @@ namespace SamB
         public void subtractNumber()
         {
             subAnwser = subNumberone - subNumbertwo;
-            Console.WriteLine("The answer to the subtraction is {0}", + subAnwser);
+            Console.WriteLine("The answer to the subtraction is {0}", subAnwser);
   
         }
 
