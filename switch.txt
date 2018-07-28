@@ -1,0 +1,17 @@
+switch statement
+Console.WriteLine("Enter your age");
+            //string boroughName = Console.ReadLine();
+            int myAge = Convert.ToInt32(Console.ReadLine());
+
+            //switch statement
+            switch (myAge)
+            {
+                case 30:
+                    Console.WriteLine(" My age is {0}", myAge);
+                    break;
+                case 45:
+                    Console.WriteLine("My age is {0}",  myAge);
+                    break;
+                default:
+                    Console.WriteLine("Sorry you are not in the age group, {0}, try another age group", myAge);
+                    break;
