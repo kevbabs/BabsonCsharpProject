@@ -10,7 +10,10 @@ namespace switchStatement
     {
        private int _childrenAge;
        private string _childrenName;
-        protected int childrenPockectMoney;
+       protected int childrenPockectMoney;
+        private int _secreteOne;
+        private int _SecreteTwo ;
+
 
         public void ChildrenEnroll(int age, string name)
         {
@@ -18,9 +21,17 @@ namespace switchStatement
             _childrenName = name;
 
             Console.WriteLine("{0} is {1} years old", _childrenName, _childrenAge);
+            Console.WriteLine("My secrete calculation is {0}", MultipleMe(6,2));
      
         }
 
+        private int MultipleMe(int numA, int numB)
+        {
+            _secreteOne = numA;
+            _SecreteTwo = numB;
+            int result = numA*numB;
+            return result;
+        }
         internal void ChildrenDetails()
         {
             Console.WriteLine("{0} is my age", _childrenAge);

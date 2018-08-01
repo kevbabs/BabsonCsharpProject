@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Grand_Parent\GarndParent.cs" />
+    <Compile Include="Parent\DadMum.cs" />
     <Compile Include="PrivateMeth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
