@@ -1,0 +1,53 @@
+
+            Triangle triangleIsoceles = new Triangle();
+            triangleIsoceles.triBase = 10;
+            triangleIsoceles.triHeigh = 10;
+            triangleIsoceles.TriangleArea();
+
+            Triangle righTriangle = new Triangle();
+            righTriangle.triBase = 7;
+            righTriangle.triHeigh = 23;
+            righTriangle.TriangleArea();
+
+            //this my second method that is return
+            Triangle PentangonCal = new Triangle();
+            PentangonCal.triBase = 23;
+            PentangonCal.triHeigh = 23;
+            PentangonCal.Pentangon();
+
+            Triangle oct = new Triangle();
+            oct.Octagon(50,5);
+
+
+
+            Console.ReadKey();
+			// main method above
+			
+			
+			My Triangle class
+			
+			 public void TriangleArea()
+        {
+            Console.WriteLine();
+            areaAnswer = triHeigh*triBase;
+            Console.WriteLine("The area of this triangle is {0}", areaAnswer);
+
+        }
+
+        public int Pentangon()
+        {
+            Console.WriteLine();
+            areaAnswer = (triBase * triHeigh) * 1/2;
+            Console.WriteLine("The area of this pentangon is {0}", areaAnswer);
+            return areaAnswer;
+        }
+
+        // This my third method that take arguement
+        public void Octagon(int paramOne, int paramTwo)
+        {
+            Console.WriteLine();
+            triHeigh = paramOne;
+            triBase = paramTwo;
+            areaAnswer = (paramOne + paramTwo)*2;
+            Console.WriteLine("The area of this Octagon is {0}", areaAnswer);
+        }
