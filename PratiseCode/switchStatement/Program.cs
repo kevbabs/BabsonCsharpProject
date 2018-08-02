@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using switchStatement.Child;
 using switchStatement.FamilyTree;
 using switchStatement.Parent;
 
@@ -12,28 +13,22 @@ namespace switchStatement
     {
         static void Main(string[] args)
         {
-            GarndParent grandParent = new GarndParent();
-            grandParent.CallChiefTitle();
-
-            PrivateMeth privateMeth = new PrivateMeth();
-            privateMeth.ChildrenEnroll(12, "Ola");
-            privateMeth.ChildrenDetails();
-
+          Samuel samuel = new Samuel();
+            samuel.PickinName();
             Console.WriteLine();
-            Console.WriteLine("Change title to Otunba");
-            grandParent.ChiefTitle = "Otunba";
-            grandParent.CallChiefTitle();
+            samuel.PickinAge();
+            samuel.childAge = 15;
+            samuel.PickinAge();
 
-            Console.WriteLine();
-            DadMum dadmum = new DadMum();
-            dadmum.CallParent();
+            Samuel sam
+            Console.WriteLine(-----------------);
+            KevNina kevNina = new KevNina();
             
 
 
 
             Console.ReadKey();
         }
-        
      }
 }
 

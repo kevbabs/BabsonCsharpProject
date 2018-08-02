@@ -1,0 +1,23 @@
+ static void Main(string[] args)
+        {
+            GarndParent grandParent = new GarndParent();
+            grandParent.CallChiefTitle();
+
+            PrivateMeth privateMeth = new PrivateMeth();
+            privateMeth.ChildrenEnroll(12, "Ola");
+            privateMeth.ChildrenDetails();
+
+            Console.WriteLine();
+            Console.WriteLine("Change title to Otunba");
+            grandParent.ChiefTitle = "Otunba";
+            grandParent.CallChiefTitle();
+
+            Console.WriteLine();
+            DadMum dadmum = new DadMum();
+            dadmum.CallParent();
+            
+
+
+
+            Console.ReadKey();
+        }
