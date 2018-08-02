@@ -8,18 +8,18 @@ namespace switchStatement.Parent
 {
     public class DadMum
     {
-        protected string ParentName = "Babs";
+        //protected string ParentName = "Babs";
 
-        public void CallParent()
-        {
-            string newName;
-            Console.WriteLine("My parent surname is {0}", ParentName);
+        //public void CallParent()
+        //{
+        //    string newName;
+        //    Console.WriteLine("My parent surname is {0}", ParentName);
            
-        }
+        //}
 
-        protected void NewName()
-        {
-          Console.WriteLine("My name is  still {0}", ParentName);
+        //protected void NewName()
+        //{
+        //  Console.WriteLine("My name is  still {0}", ParentName);
          
         }
     }
