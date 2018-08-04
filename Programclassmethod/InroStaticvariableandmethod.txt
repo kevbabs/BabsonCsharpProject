@@ -1,0 +1,16 @@
+//Static variable & method
+          StaticChecks staticChecks = new StaticChecks();
+            staticChecks.name = "Kevin";
+            staticChecks.age = 22;
+
+            staticChecks.SetValue(2222);
+            staticChecks.GetValue();
+            Console.WriteLine("------------------------------");
+            StaticChecks.staticNumber = 33333;
+            staticChecks.GetValue();
+            Console.WriteLine("------------------------------");
+
+            StaticChecks.SetStaticValue(23467);
+            StaticChecks.GetStaticVale();
+
+            Console.ReadKey();

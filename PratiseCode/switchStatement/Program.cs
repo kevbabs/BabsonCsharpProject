@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using switchStatement.Child;
 using switchStatement.FamilyTree;
 using switchStatement.Parent;
+using switchStatement.StaticThings;
 
 namespace switchStatement
 {
@@ -13,17 +14,14 @@ namespace switchStatement
     {
         static void Main(string[] args)
         {
-          Samuel samuel = new Samuel();
-            samuel.PickinName();
-            Console.WriteLine();
-            samuel.PickinAge();
-            samuel.childAge = 15;
-            samuel.PickinAge();
+            CallConstructor callConstructor = new CallConstructor("Cat", 2, 4);
+            callConstructor.CreateAnimal();
+            Console.WriteLine("------------------------------");
 
-            Samuel sam
-            Console.WriteLine(-----------------);
-            KevNina kevNina = new KevNina();
-            
+            Console.WriteLine("------------------------------");
+
+            CallConstructor callConstructorNew = new CallConstructor("Dragon", 2, 4, 1);
+            callConstructorNew.CreateAnimal();
 
 
 

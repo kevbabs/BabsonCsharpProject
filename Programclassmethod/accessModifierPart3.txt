@@ -1,0 +1,20 @@
+
+          Samuel samuel = new Samuel();
+            samuel.PickinName();
+            Console.WriteLine();
+            samuel.PickinAge();
+            samuel.childAge = 15;
+            Console.WriteLine();
+            samuel.PickinAge();
+            Console.WriteLine();
+            samuel.CallDaddyName();
+            samuel.CallDaddyAge();
+            Console.WriteLine();
+            samuel.MarriageName();
+            Console.WriteLine();
+
+
+
+
+            Console.ReadKey();
+          

@@ -43,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallConstructor.cs" />
     <Compile Include="Child\Samuel.cs" />
+    <Compile Include="ConstructorMe.cs" />
     <Compile Include="Grand_Parent\chiefBabs.cs" />
     <Compile Include="Grand_Parent\GarndParent.cs" />
-    <Compile Include="Parent\DadMum.cs" />
-    <Compile Include="Parent\KevNina.cs" />
+    <Compile Include="Parent\Kevin.cs" />
     <Compile Include="PrivateMeth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="publicMethod.cs" />
+    <Compile Include="StaticThings\StaticChecks.cs" />
     <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
