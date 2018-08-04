@@ -10,5 +10,10 @@ namespace switchStatement.Grand_Parent
     {
         private string grandPaName = "ChiefBabs";
         private int grandPaAccount = 1000000;
+
+        public void giveMeMoney()
+        {
+            Console.WriteLine("I have inherited {0}", grandPaAccount);
+        }
     }
 }
