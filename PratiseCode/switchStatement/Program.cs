@@ -14,18 +14,21 @@ namespace switchStatement
     {
         static void Main(string[] args)
         {
-            CallConstructor callConstructor = new CallConstructor("Cat", 2, 4);
-            callConstructor.CreateAnimal();
-            Console.WriteLine("------------------------------");
+            GrandKid childAbstract = new GrandKid();
+            childAbstract.AddMe(4, 20.6);
+            
+            childAbstract.AdditionResult();
 
-            Console.WriteLine("------------------------------");
-
-            CallConstructor callConstructorNew = new CallConstructor("Dragon", 2, 4, 1);
-            callConstructorNew.CreateAnimal();
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------------------------------");
+            
+            childAbstract.AddMe(2.4, 5.6);
+            childAbstract.AdditionResult();
 
 
 
             Console.ReadKey();
+
         }
      }
 }
