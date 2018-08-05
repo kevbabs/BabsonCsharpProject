@@ -1,0 +1,8 @@
+ CallConstructor callConstructor = new CallConstructor("Cat", 2, 4);
+            callConstructor.CreateAnimal();
+            Console.WriteLine("------------------------------");
+
+            Console.WriteLine("------------------------------");
+
+            CallConstructor callConstructorNew = new CallConstructor("Dragon", 2, 4, 1);
+            callConstructorNew.CreateAnimal();
