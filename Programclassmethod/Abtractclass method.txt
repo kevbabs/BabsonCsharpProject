@@ -1,0 +1,14 @@
+      GrandKid childAbstract = new GrandKid();
+            childAbstract.AddMe(4, 20.6);
+            
+            childAbstract.AdditionResult();
+
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------------------------------");
+            
+            childAbstract.AddMe(2.4, 5.6);
+            childAbstract.AdditionResult();
+
+
+
+            Console.ReadKey();
