@@ -51,6 +51,9 @@
     <Compile Include="GrandKid.cs" />
     <Compile Include="Grand_Parent\chiefBabs.cs" />
     <Compile Include="Grand_Parent\GarndParent.cs" />
+    <Compile Include="Interfacing\Dog.cs" />
+    <Compile Include="Interfacing\IElephant.cs" />
+    <Compile Include="Interfacing\INterFaceClass.cs" />
     <Compile Include="Parent\Kevin.cs" />
     <Compile Include="PrivateMeth.cs" />
     <Compile Include="Program.cs" />
