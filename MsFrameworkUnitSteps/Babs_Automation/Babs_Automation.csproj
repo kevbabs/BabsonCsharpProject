@@ -65,21 +65,22 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Base\BaseClass.cs" />
+    <Compile Include="Component_Helper\NavigationHelper.cs" />
     <Compile Include="Configureation\AppConfigReader.cs" />
     <Compile Include="Configureation\BrowserType.cs" />
+    <Compile Include="Custom_Exception\NoSuitableDriverFound.cs" />
     <Compile Include="FirstUnitTest.cs" />
     <Compile Include="Interfaces\Iconfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SandBox\Navigation\TestNavigation.cs" />
     <Compile Include="Setting\AppconfigKeys.cs" />
+    <Compile Include="Setting\ObjectRepository.cs" />
     <Compile Include="SoloClass.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base Class\" />
-    <Folder Include="Component_Helper\" />
-    <Folder Include="Custom_Exception\" />
     <Folder Include="Data_Files\" />
     <Folder Include="Page_Object\" />
-    <Folder Include="SandBox\" />
     <Folder Include="Test_Scripts\" />
   </ItemGroup>
   <ItemGroup>
@@ -117,11 +118,13 @@
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets'))" />
     <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.41\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.41\build\Selenium.Chrome.WebDriver.targets'))" />
     <Error Condition="!Exists('..\packages\Selenium.InternetExplorer.WebDriver.3.14\build\Selenium.InternetExplorer.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.InternetExplorer.WebDriver.3.14\build\Selenium.InternetExplorer.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.GeckoDriver.Win64.0.22.0\build\Selenium.WebDriver.GeckoDriver.Win64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.GeckoDriver.Win64.0.22.0\build\Selenium.WebDriver.GeckoDriver.Win64.targets'))" />
   </Target>
   <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.41.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.41.0\build\Selenium.WebDriver.ChromeDriver.targets')" />
   <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" />
   <Import Project="..\packages\Selenium.Chrome.WebDriver.2.41\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.41\build\Selenium.Chrome.WebDriver.targets')" />
   <Import Project="..\packages\Selenium.InternetExplorer.WebDriver.3.14\build\Selenium.InternetExplorer.WebDriver.targets" Condition="Exists('..\packages\Selenium.InternetExplorer.WebDriver.3.14\build\Selenium.InternetExplorer.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.GeckoDriver.Win64.0.22.0\build\Selenium.WebDriver.GeckoDriver.Win64.targets" Condition="Exists('..\packages\Selenium.WebDriver.GeckoDriver.Win64.0.22.0\build\Selenium.WebDriver.GeckoDriver.Win64.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

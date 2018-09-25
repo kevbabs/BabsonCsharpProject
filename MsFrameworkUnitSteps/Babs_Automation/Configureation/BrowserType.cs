@@ -10,7 +10,7 @@ namespace Babs_Automation.Configureation
     {
         Firefox,
         Chrome,
-        Explorer,
+        IExplorer,
         Edge,
         ChromeHeadless
     }

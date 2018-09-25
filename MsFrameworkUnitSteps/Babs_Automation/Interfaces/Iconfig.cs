@@ -12,5 +12,7 @@ namespace Babs_Automation.Interfaces
         string GetUsername();
         string GetPassword();
         BrowserType GetBrowser();
+
+        string GetWebsite();
     }
 }
