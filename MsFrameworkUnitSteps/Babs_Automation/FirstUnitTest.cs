@@ -1,67 +1,47 @@
 ﻿using System;
+using System.Configuration;
 using System.Runtime.InteropServices;
+using Babs_Automation.Configureation;
+using Babs_Automation.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace Babs_Automation
 {
     [TestClass]
     public class FirstUnitTest
     {
-        [AssemblyInitialize]
-        public static void Beforeassembly(TestContext testContext)
-        {
-            Console.WriteLine("Before Assembly");
-        }
-        [ClassInitialize]
-        public static void BeforeClass(TestContext testContext)
-        {
-            Console.WriteLine("Class Initialize -- Run before tests");
-        }
-    
-        [TestInitialize]
-        public void BeforeTest()
-        {
-            Console.WriteLine("Test Initialize ---Run before test");
-            Console.WriteLine("Launch browser");
-        }
-  
+        private readonly Iconfig _config = new AppConfigReader();
+
         [TestMethod, TestCategory("Smoke Test")]
-        public void CreateAccount()
+        public void LaunchAndCloseBrowser()
         {
-            Console.WriteLine("CREATE A USER ACCOUNT ");
+            IWebDriver driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("https://www.bbc.co.uk/");
+            driver.FindElement(By.LinkText("Weather")).Click();
+            driver.Manage().Window.Maximize();
+            driver.Close();
+            //driver.Quit();
+            driver.Dispose();
         }
 
-        [TestMethod, TestCategory("UAT Test")]
-        public void LogIntoAccount()
+        [TestMethod, TestCategory("Smoke Test"),]
+        public void Navigate()
         {
-            CreateAccount();
-            Console.WriteLine("LOG INTO THE APPLICATION ");
+
+            ConfigurationManager.AppSettings.Get("Browser");
+            Console.WriteLine(BrowserType.Chrome);
+            Console.WriteLine((int)BrowserType.Explorer);
         }
 
-        [TestMethod, TestCategory("Regression Test"), Ignore]
-        public void LogOutOfAccount()
+        [TestMethod]
+        public void  SimpleMethod()
         {
-            LogIntoAccount();
-            Console.WriteLine("LOG OUT OF THE ACCOUNT");
-        }
-
-        [TestCleanup]
-        public void AfterTest()
-        {
-            Console.WriteLine("Test Cleanup -- Run after test");
-            Console.WriteLine("Close browser");
-        }
-
-        [ClassCleanup]
-        public static void AfterClass()
-        {
-            Console.WriteLine("Class cleanup");
-        }
-
-        [AssemblyCleanup]
-        public static void AfterAssembly()
-        {
-            Console.WriteLine("After Assembly");
+            Console.WriteLine(_config.GetUsername());
+            Console.WriteLine(_config.GetBrowser());
+            Console.WriteLine(_config.GetPassword());
         }
 
     }

@@ -1,0 +1,23 @@
+ [TestClass]
+    public class FirstUnitTest
+    {
+          
+        [TestMethod, TestCategory("Smoke Test")]
+        public void LaunchAndCloseBrowser()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("https://www.bbc.co.uk/");
+            driver.FindElement(By.LinkText("Weather")).Click();
+            driver.Manage().Window.Maximize();
+            driver.Close();
+            //driver.Quit();
+            driver.Dispose();
+        }
+
+        [TestMethod, TestCategory("Smoke Test"),]
+        public void Navigate()
+        {
+
+           
+        }
