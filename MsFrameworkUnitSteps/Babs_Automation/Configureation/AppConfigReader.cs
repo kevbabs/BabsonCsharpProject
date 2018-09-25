@@ -24,8 +24,13 @@ namespace Babs_Automation.Configureation
        public BrowserType GetBrowser()
        {
            string browser = ConfigurationManager.AppSettings.Get(AppconfigKeys.Browser);
-           return (BrowserType) Enum.Parse(typeof (BrowserType), browser);
+           return (BrowserType) Enum.Parse(typeof(BrowserType), browser);
 
        }
+
+       public string GetWebsite()
+       {
+            return ConfigurationManager.AppSettings.Get(AppconfigKeys.Website);
+        }
     }
 }
