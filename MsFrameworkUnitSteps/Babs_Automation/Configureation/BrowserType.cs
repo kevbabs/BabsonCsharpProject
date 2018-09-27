@@ -8,8 +8,8 @@ namespace Babs_Automation.Configureation
 {
     public enum BrowserType
     {
-        Firefox,
         Chrome,
+        Firefox,
         IExplorer,
         Edge,
         ChromeHeadless

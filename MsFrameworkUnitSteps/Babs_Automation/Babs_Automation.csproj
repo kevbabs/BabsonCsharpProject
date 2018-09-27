@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Base\BaseClass.cs" />
     <Compile Include="Component_Helper\NavigationHelper.cs" />
+    <Compile Include="Component_Helper\PageTittleHelper.cs" />
     <Compile Include="Configureation\AppConfigReader.cs" />
     <Compile Include="Configureation\BrowserType.cs" />
     <Compile Include="Custom_Exception\NoSuitableDriverFound.cs" />
