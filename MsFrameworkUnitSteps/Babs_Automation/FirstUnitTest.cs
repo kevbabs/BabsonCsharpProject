@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Configuration;
 using System.Runtime.InteropServices;
+using Babs_Automation.Component_Helper;
 using Babs_Automation.Configureation;
 using Babs_Automation.Interfaces;
+using Babs_Automation.Setting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -37,11 +39,16 @@ namespace Babs_Automation
         //}
 
         [TestMethod]
-        public void SimpleMethod()
+        public void GoToDefinedWebsite()
         {
             //Console.WriteLine(_config.GetUsername());
             //Console.WriteLine(_config.GetBrowser());
             //Console.WriteLine(_config.GetPassword());
+
+            NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
+
+            var pageTittle = ObjectRepository.Driver.Title;
+            Console.WriteLine("The page tittle is: {0}", PageTittleHelper.GetPageTittle());
         }
 
     }

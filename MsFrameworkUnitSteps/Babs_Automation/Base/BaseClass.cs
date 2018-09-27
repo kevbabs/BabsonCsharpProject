@@ -17,6 +17,46 @@ namespace Babs_Automation.Base
     [TestClass]
     public class BaseClass
     {
+
+#region BrowerOptions
+        private static ChromeOptions GetChromeOptions()
+        {
+            var cOptions = new ChromeOptions();
+            cOptions.AddArgument("start-maximized");
+            return cOptions;
+        }
+
+
+        private static InternetExplorerOptions GetIEOptions()
+        {
+           var iEOptions = new InternetExplorerOptions();
+            {
+                iEOptions.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                iEOptions.EnsureCleanSession = true;
+                
+            }
+            return iEOptions;
+        }
+
+        private static FirefoxProfile GetFirefoxOptions()
+        {
+            var  fOptions = new FirefoxProfile();
+            var fxManager = new FirefoxProfileManager();
+            fOptions = fxManager.GetProfile("default");
+            return fOptions;
+        }
+
+        private static ChromeOptions GetMoreChromeOptions()
+        {
+            var  mChromeOptions  = new ChromeOptions();
+            mChromeOptions.AddArgument("--Headless");
+            return mChromeOptions;
+;        }
+
+        #endregion
+
+
+#region DriversInstances
         private static IWebDriver GetFirefoxDriver()
         {
             IWebDriver driver = new FirefoxDriver();
@@ -25,16 +65,26 @@ namespace Babs_Automation.Base
 
         private static IWebDriver GetChromeDriver()
         {
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new ChromeDriver(GetChromeOptions());
             return driver;
         }
 
         private static IWebDriver GetIExplorerDriver()
         {
-            IWebDriver driver = new InternetExplorerDriver();
+            IWebDriver driver = new InternetExplorerDriver(GetIEOptions());
             return driver;
         }
 
+        private static IWebDriver GetExtraChromeDriver()
+        {
+            IWebDriver driver = new ChromeDriver(GetMoreChromeOptions());
+            return driver;
+        }
+
+        #endregion
+
+
+#region BrowerLanch
         [AssemblyInitialize]
         public static void InitWebDriver(TestContext testContext)
         {
@@ -53,12 +103,14 @@ namespace Babs_Automation.Base
                     ObjectRepository.Driver = GetIExplorerDriver();
                     break;
 
+                case BrowserType.ChromeHeadless:
+                    ObjectRepository.Driver = GetExtraChromeDriver();
+                    break;
+
                 default:
                     throw new NoSuitableDriverFound("Driver not find {0}", ObjectRepository.Config.GetBrowser());
                         
-                        
-                        
-
+  
             }
         }
 
@@ -72,5 +124,7 @@ namespace Babs_Automation.Base
                 //ObjectRepository.Driver.Dispose();
             }
         }
+
+#endregion
     }
 }
