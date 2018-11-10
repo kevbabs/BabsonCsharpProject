@@ -1,0 +1,4 @@
+public void ConfirmAccount()
+       {
+           Assert.IsTrue(ObjectRepository.Driver.PageSource.Contains("Your Account Has Been Created!"));
+       }
