@@ -20,50 +20,50 @@ namespace Babs_Automation.SandBox.WebElements
 
         public void Elements()
         {
-            //NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
+            NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
 
-            //try
-            //{
+            try
+            {
 
-            //    ObjectRepository.Driver.FindElement(By.Id("q"));
-            //    //Console.WriteLine(ObjectRepository.Driver.FindElement(By.ClassName("cof"));
-            //    ObjectRepository.Driver.FindElement(By.LinkText("Download"));
-            //    ObjectRepository.Driver.FindElement(By.PartialLinkText("Remote Control"));
-            //    ObjectRepository.Driver.FindElement(By.Name("cx"));
-            //    ObjectRepository.Driver.FindElement(By.TagName("label"));
-            //    ObjectRepository.Driver.FindElement(By.XPath("/html/body/div[3]/div[2]/div[2]/table/tbody/tr/td[1]/center/a[1]/img"));
+                ObjectRepository.Driver.FindElement(By.Id("q"));
+                //Console.WriteLine(ObjectRepository.Driver.FindElement(By.ClassName("cof"));
+                ObjectRepository.Driver.FindElement(By.LinkText("Download"));
+                ObjectRepository.Driver.FindElement(By.PartialLinkText("Remote Control"));
+                ObjectRepository.Driver.FindElement(By.Name("cx"));
+                ObjectRepository.Driver.FindElement(By.TagName("label"));
+                ObjectRepository.Driver.FindElement(By.XPath("/html/body/div[3]/div[2]/div[2]/table/tbody/tr/td[1]/center/a[1]/img"));
 
-            //}
+            }
 
-            //catch (NoSuchElementException e)
-            //{
-            //    Console.WriteLine(e);
-            //    throw;
-            //}
+            catch (NoSuchElementException e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
 
-            //Thread.Sleep(3000);
-            //var tagList = ObjectRepository.Driver.FindElements(By.TagName("input"));
-            //foreach (var tag in tagList)
-            //{
-            //    if (tag.GetAttribute("value").Equals("Go"))
-            //    {
-            //        Thread.Sleep(3000);
-            //        tag.Click();
-            //    }
-            //    break;
-            //}
+            Thread.Sleep(3000);
+            var tagList = ObjectRepository.Driver.FindElements(By.TagName("input"));
+            foreach (var tag in tagList)
+            {
+                if (tag.GetAttribute("value").Equals("Go"))
+                {
+                    Thread.Sleep(3000);
+                    tag.Click();
+                }
+                break;
+               }
 
 
-            //LinkHelper.ClickLink(By.LinkText("Learn more about sponsorship"));
-            
-            //LinkHelper.ClickLink(By.PartialLinkText("more about sponsorship"));
-           
-            //TextBoxHelper.ClearText(By.Id("q"));
-            // Have problem in using configure userid
-            //TextBoxHelper.SendText(By.Id("q"), "Kevin" );
-            //Thread.Sleep(4000);
+                //LinkHelper.ClickLink(By.LinkText("Learn more about sponsorship"));
 
-        }
+                //LinkHelper.ClickLink(By.PartialLinkText("more about sponsorship"));
+
+                //TextBoxHelper.ClearText(By.Id("q"));
+                // Have problem in using configure userid
+                //TextBoxHelper.SendText(By.Id("q"), "Kevin" );
+                //Thread.Sleep(4000);
+
+            }
     }
 }
 

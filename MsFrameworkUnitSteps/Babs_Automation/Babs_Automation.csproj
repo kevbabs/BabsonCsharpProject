@@ -74,6 +74,7 @@
     <Compile Include="Component_Helper\PageTittleHelper.cs" />
     <Compile Include="Component_Helper\RadioButtonHelper.cs" />
     <Compile Include="Component_Helper\TextBoxHelper.cs" />
+    <Compile Include="Component_Helper\WaitHelper.cs" />
     <Compile Include="Configureation\AppConfigReader.cs" />
     <Compile Include="Configureation\BrowserType.cs" />
     <Compile Include="SandBox\NoSuitableDriverFound.cs" />
