@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Threading;
 using Babs_Automation.Component_Helper;
 using Babs_Automation.Setting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 
-namespace Babs_Automation
+namespace Babs_Automation.SandBox.WebElements
 {
     [TestClass]
     public class TestWebElements2
@@ -15,14 +13,12 @@ namespace Babs_Automation
 
         [TestMethod]
         public void Elements2()
-        {
-            //NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());   
-                                   
+        {                                   
             NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
 
             //help to navigate to the Register page
             ButtonHelper.IsButtonEnable(By.XPath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]"));
-            //Thread.Sleep(4000);
+            Thread.Sleep(4000);
             ButtonHelper.ClickButton(By.XPath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]"));
             ButtonHelper.ClickButton(By.PartialLinkText("Register"));
 
@@ -33,7 +29,7 @@ namespace Babs_Automation
             WaitHelper.WaitForElement(By.ClassName("agree"));
             Console.WriteLine(CheckboxHelper.IsCheckBoxChecked(By.Name("agree")));
             CheckboxHelper.CheckACheckBox(By.Name("agree"));
-            
+
         }
     }
 }

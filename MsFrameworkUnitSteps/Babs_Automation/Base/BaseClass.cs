@@ -114,7 +114,7 @@ namespace Babs_Automation.Base
             }
 
             // This page load wait which handle better that specifield implicit wait
-            ObjectRepository.Driver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(15);
+            ObjectRepository.Driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(15);
 
             // thsi how implement implicit wait
            // ObjectRepository.Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(10);
@@ -126,8 +126,8 @@ namespace Babs_Automation.Base
             if (ObjectRepository.Driver !=null)
             {
                 //ObjectRepository.Driver.Close();
-                ObjectRepository.Driver.Quit();
-                //ObjectRepository.Driver.Dispose();
+                //ObjectRepository.Driver.Quit();
+                ObjectRepository.Driver.Dispose();
             }
         }
 

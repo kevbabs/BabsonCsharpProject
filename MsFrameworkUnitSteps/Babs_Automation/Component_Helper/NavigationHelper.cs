@@ -11,6 +11,7 @@ namespace Babs_Automation.Component_Helper
     {
         public static void NavigateToUrl(string url)
         {
+           //ObjectRepository.Driver.Navigate().GoToUrl(url);
            ObjectRepository.Driver.Navigate().GoToUrl(url);
         }
     }

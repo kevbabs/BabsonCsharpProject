@@ -16,7 +16,7 @@ namespace Babs_Automation.Component_Helper
 
         public static void WaitForElement(By locator)
         {
-            var  wait = new WebDriverWait(ObjectRepository.Driver, TimeSpan.FromMilliseconds(15));
+            var  wait = new WebDriverWait(ObjectRepository.Driver, TimeSpan.FromSeconds(15));
             // Lambda expression
             _element = wait.Until(d => d.FindElement(locator));
         }
