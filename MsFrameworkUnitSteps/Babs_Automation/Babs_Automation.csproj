@@ -68,6 +68,7 @@
     <Compile Include="Base\BaseClass.cs" />
     <Compile Include="Component_Helper\ButtonHelper.cs" />
     <Compile Include="Component_Helper\CheckboxHelper.cs" />
+    <Compile Include="Component_Helper\DropDownHelper.cs" />
     <Compile Include="Component_Helper\GenericHelper.cs" />
     <Compile Include="Component_Helper\LinkHelper.cs" />
     <Compile Include="Component_Helper\NavigationHelper.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Component_Helper\WaitHelper.cs" />
     <Compile Include="Configureation\AppConfigReader.cs" />
     <Compile Include="Configureation\BrowserType.cs" />
+    <Compile Include="SandBox\ComboBox.cs" />
     <Compile Include="SandBox\NoSuitableDriverFound.cs" />
     <Compile Include="FirstUnitTest.cs" />
     <Compile Include="Interfaces\Iconfig.cs" />
