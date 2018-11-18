@@ -17,17 +17,27 @@ namespace Babs_Automation.SandBox
         [TestMethod]
         public void MenuDropDown()
         {
-            NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
+            try
+            {
+                NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
 
-            LinkHelper.ClickLink(By.LinkText("Desktops"));          
-            LinkHelper.ClickLink(By.LinkText("Mac (1)"));
+                LinkHelper.ClickLink(By.LinkText("Desktops"));
+                LinkHelper.ClickLink(By.LinkText("Mac (1)"));
 
-            DropDownHelper.SelectElementByIndex(By.Id("input-sort"), 3);
-            Thread.Sleep(2000);       
-            DropDownHelper.SelectElementByValue(By.Id("input-limit"), "https://demo.opencart.com/index.php?route=product/category&path=20_27&sort=p.price&order=ASC&limit=100");
-            Thread.Sleep(2000);
-            DropDownHelper.SelectElementByText(By.Id("input-sort"), "Rating (Highest)");
-            Thread.Sleep(2000);
+                DropDownHelper.SelectElementByIndex(By.Id("input-sort"), 3);
+                Thread.Sleep(1000);
+                DropDownHelper.SelectElementByValue(By.Id("input-limit"), "https://demo.opencart.com/index.php?route=product/category&path=20_27&sort=p.price&order=ASC&limit=100");
+                Thread.Sleep(1000);
+                DropDownHelper.SelectElementByText(By.Id("input-sort"), "Rating (Highest3)");
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                GenericHelper.TakeAScreenshot();
+                throw;
+            }
+           
         }
 
     }
