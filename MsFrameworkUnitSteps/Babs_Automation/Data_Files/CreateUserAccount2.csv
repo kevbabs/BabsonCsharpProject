@@ -1,0 +1,4 @@
+FirstName,LastName,Email,Phone,Password,ConfirmPassword
+joe,Baker,red@gmail.com,07472356894,password123,password123
+joy,Bak,black@gmail.com,07472356494,password123,password124
+Ken,ola,blue@gmail.com,07472356814,password123,password125
